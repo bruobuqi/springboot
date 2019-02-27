@@ -15,14 +15,14 @@ public class WebServiceImpl implements WebService {
 
     @Override
     public String sayHello1(String name) {
-        String said = name + ",Hello~~";
+        String said = name + ",Hellonhao~~";
         System.out.println(said);
         return said;
 }
 
     @Override
     public String sayHello2(String name) {
-        String said = name + ",Hello~~";
+        String said = name + ",Hellonaodsk~~";
         System.out.println(said);
         return said;
     }
