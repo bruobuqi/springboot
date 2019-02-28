@@ -4,17 +4,17 @@
 <xsd:import namespace="http://impl.ws_demo/" schemaLocation="http://localhost:8081/wsServeice?xsd=1"></xsd:import>
 </xsd:schema>
 </types>
-<message name="sayHello1">
-<part name="parameters" element="tns:sayHello1"></part>
-</message>
-<message name="sayHello1Response">
-<part name="parameters" element="tns:sayHello1Response"></part>
-</message>
 <message name="sayHello">
 <part name="parameters" element="tns:sayHello"></part>
 </message>
 <message name="sayHelloResponse">
 <part name="parameters" element="tns:sayHelloResponse"></part>
+</message>
+<message name="sayHello1">
+<part name="parameters" element="tns:sayHello1"></part>
+</message>
+<message name="sayHello1Response">
+<part name="parameters" element="tns:sayHello1Response"></part>
 </message>
 <message name="sayHello2">
 <part name="parameters" element="tns:sayHello2"></part>
@@ -35,13 +35,13 @@
 <part name="parameters" element="tns:sayHello4Response"></part>
 </message>
 <portType name="WebServiceImpl">
-<operation name="sayHello1">
-<input wsam:Action="http://impl.ws_demo/WebServiceImpl/sayHello1Request" message="tns:sayHello1"></input>
-<output wsam:Action="http://impl.ws_demo/WebServiceImpl/sayHello1Response" message="tns:sayHello1Response"></output>
-</operation>
 <operation name="sayHello">
 <input wsam:Action="http://impl.ws_demo/WebServiceImpl/sayHelloRequest" message="tns:sayHello"></input>
 <output wsam:Action="http://impl.ws_demo/WebServiceImpl/sayHelloResponse" message="tns:sayHelloResponse"></output>
+</operation>
+<operation name="sayHello1">
+<input wsam:Action="http://impl.ws_demo/WebServiceImpl/sayHello1Request" message="tns:sayHello1"></input>
+<output wsam:Action="http://impl.ws_demo/WebServiceImpl/sayHello1Response" message="tns:sayHello1Response"></output>
 </operation>
 <operation name="sayHello2">
 <input wsam:Action="http://impl.ws_demo/WebServiceImpl/sayHello2Request" message="tns:sayHello2"></input>
@@ -58,7 +58,7 @@
 </portType>
 <binding name="WebServiceImplPortBinding" type="tns:WebServiceImpl">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"></soap:binding>
-<operation name="sayHello1">
+<operation name="sayHello">
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -67,7 +67,7 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
-<operation name="sayHello">
+<operation name="sayHello1">
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>

@@ -28,21 +28,6 @@ public interface WebServiceImpl {
      * 
      * @param arg0
      * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "sayHello1", targetNamespace = "http://impl.ws_demo/", className = "com.example.ceshisuan.util.SayHello1")
-    @ResponseWrapper(localName = "sayHello1Response", targetNamespace = "http://impl.ws_demo/", className = "com.example.ceshisuan.util.SayHello1Response")
-    @Action(input = "http://impl.ws_demo/WebServiceImpl/sayHello1Request", output = "http://impl.ws_demo/WebServiceImpl/sayHello1Response")
-    public String sayHello1(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
-
-    /**
-     * 
-     * @param arg0
-     * @return
      *     returns com.example.ceshisuan.util.User
      */
     @WebMethod
@@ -53,6 +38,21 @@ public interface WebServiceImpl {
     public User sayHello(
         @WebParam(name = "arg0", targetNamespace = "")
         User arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "sayHello1", targetNamespace = "http://impl.ws_demo/", className = "com.example.ceshisuan.util.SayHello1")
+    @ResponseWrapper(localName = "sayHello1Response", targetNamespace = "http://impl.ws_demo/", className = "com.example.ceshisuan.util.SayHello1Response")
+    @Action(input = "http://impl.ws_demo/WebServiceImpl/sayHello1Request", output = "http://impl.ws_demo/WebServiceImpl/sayHello1Response")
+    public String sayHello1(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
 
     /**
      * 
