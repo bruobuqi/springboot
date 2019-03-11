@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>anonymous complex type�� Java �ࡣ
+ * <p>anonymous complex type的 Java 类。
  * 
- * <p>����ģʽƬ��ָ�������ڴ����е�Ԥ�����ݡ�
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
  * &lt;complexType>
@@ -48,7 +48,7 @@ public class GetItemResponse {
     protected byte[] stream;
 
     /**
-     * ��ȡgetItemResult���Ե�ֵ��
+     * 获取getItemResult属性的值。
      * 
      */
     public long getGetItemResult() {
@@ -56,7 +56,7 @@ public class GetItemResponse {
     }
 
     /**
-     * ����getItemResult���Ե�ֵ��
+     * 设置getItemResult属性的值。
      * 
      */
     public void setGetItemResult(long value) {
@@ -64,7 +64,7 @@ public class GetItemResponse {
     }
 
     /**
-     * ��ȡfields���Ե�ֵ��
+     * 获取fields属性的值。
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class GetItemResponse {
     }
 
     /**
-     * ����fields���Ե�ֵ��
+     * 设置fields属性的值。
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class GetItemResponse {
     }
 
     /**
-     * ��ȡstream���Ե�ֵ��
+     * 获取stream属性的值。
      * 
      * @return
      *     possible object is
@@ -99,7 +99,7 @@ public class GetItemResponse {
     }
 
     /**
-     * ����stream���Ե�ֵ��
+     * 设置stream属性的值。
      * 
      * @param value
      *     allowed object is

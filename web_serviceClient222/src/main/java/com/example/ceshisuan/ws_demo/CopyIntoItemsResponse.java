@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>anonymous complex type�� Java �ࡣ
+ * <p>anonymous complex type的 Java 类。
  * 
- * <p>����ģʽƬ��ָ�������ڴ����е�Ԥ�����ݡ�
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
  * &lt;complexType>
@@ -44,7 +44,7 @@ public class CopyIntoItemsResponse {
     protected CopyResultCollection results;
 
     /**
-     * ��ȡcopyIntoItemsResult���Ե�ֵ��
+     * 获取copyIntoItemsResult属性的值。
      * 
      */
     public long getCopyIntoItemsResult() {
@@ -52,7 +52,7 @@ public class CopyIntoItemsResponse {
     }
 
     /**
-     * ����copyIntoItemsResult���Ե�ֵ��
+     * 设置copyIntoItemsResult属性的值。
      * 
      */
     public void setCopyIntoItemsResult(long value) {
@@ -60,7 +60,7 @@ public class CopyIntoItemsResponse {
     }
 
     /**
-     * ��ȡresults���Ե�ֵ��
+     * 获取results属性的值。
      * 
      * @return
      *     possible object is
@@ -72,7 +72,7 @@ public class CopyIntoItemsResponse {
     }
 
     /**
-     * ����results���Ե�ֵ��
+     * 设置results属性的值。
      * 
      * @param value
      *     allowed object is

@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>CopyResult complex type�� Java �ࡣ
+ * <p>CopyResult complex type的 Java 类。
  * 
- * <p>����ģʽƬ��ָ�������ڴ����е�Ԥ�����ݡ�
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
  * &lt;complexType name="CopyResult">
@@ -38,7 +38,7 @@ public class CopyResult {
     protected String destinationUrl;
 
     /**
-     * ��ȡerrorCode���Ե�ֵ��
+     * 获取errorCode属性的值。
      * 
      * @return
      *     possible object is
@@ -50,7 +50,7 @@ public class CopyResult {
     }
 
     /**
-     * ����errorCode���Ե�ֵ��
+     * 设置errorCode属性的值。
      * 
      * @param value
      *     allowed object is
@@ -62,7 +62,7 @@ public class CopyResult {
     }
 
     /**
-     * ��ȡerrorMessage���Ե�ֵ��
+     * 获取errorMessage属性的值。
      * 
      * @return
      *     possible object is
@@ -74,7 +74,7 @@ public class CopyResult {
     }
 
     /**
-     * ����errorMessage���Ե�ֵ��
+     * 设置errorMessage属性的值。
      * 
      * @param value
      *     allowed object is
@@ -86,7 +86,7 @@ public class CopyResult {
     }
 
     /**
-     * ��ȡdestinationUrl���Ե�ֵ��
+     * 获取destinationUrl属性的值。
      * 
      * @return
      *     possible object is
@@ -98,7 +98,7 @@ public class CopyResult {
     }
 
     /**
-     * ����destinationUrl���Ե�ֵ��
+     * 设置destinationUrl属性的值。
      * 
      * @param value
      *     allowed object is

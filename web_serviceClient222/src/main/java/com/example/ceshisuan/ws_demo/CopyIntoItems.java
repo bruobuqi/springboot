@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>anonymous complex type�� Java �ࡣ
+ * <p>anonymous complex type的 Java 类。
  * 
- * <p>����ģʽƬ��ָ�������ڴ����е�Ԥ�����ݡ�
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
  * &lt;complexType>
@@ -50,7 +50,7 @@ public class CopyIntoItems {
     protected byte[] stream;
 
     /**
-     * ��ȡsourceUrl���Ե�ֵ��
+     * 获取sourceUrl属性的值。
      * 
      * @return
      *     possible object is
@@ -62,7 +62,7 @@ public class CopyIntoItems {
     }
 
     /**
-     * ����sourceUrl���Ե�ֵ��
+     * 设置sourceUrl属性的值。
      * 
      * @param value
      *     allowed object is
@@ -74,7 +74,7 @@ public class CopyIntoItems {
     }
 
     /**
-     * ��ȡdestinationUrls���Ե�ֵ��
+     * 获取destinationUrls属性的值。
      * 
      * @return
      *     possible object is
@@ -86,7 +86,7 @@ public class CopyIntoItems {
     }
 
     /**
-     * ����destinationUrls���Ե�ֵ��
+     * 设置destinationUrls属性的值。
      * 
      * @param value
      *     allowed object is
@@ -98,7 +98,7 @@ public class CopyIntoItems {
     }
 
     /**
-     * ��ȡfields���Ե�ֵ��
+     * 获取fields属性的值。
      * 
      * @return
      *     possible object is
@@ -110,7 +110,7 @@ public class CopyIntoItems {
     }
 
     /**
-     * ����fields���Ե�ֵ��
+     * 设置fields属性的值。
      * 
      * @param value
      *     allowed object is
@@ -122,7 +122,7 @@ public class CopyIntoItems {
     }
 
     /**
-     * ��ȡstream���Ե�ֵ��
+     * 获取stream属性的值。
      * 
      * @return
      *     possible object is
@@ -133,7 +133,7 @@ public class CopyIntoItems {
     }
 
     /**
-     * ����stream���Ե�ֵ��
+     * 设置stream属性的值。
      * 
      * @param value
      *     allowed object is

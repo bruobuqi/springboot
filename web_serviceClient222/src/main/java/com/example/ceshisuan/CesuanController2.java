@@ -1,27 +1,20 @@
-/*
 package com.example.ceshisuan;
 
-import com.example.ceshisuan.cn.com.ClientLoginInterceptor;
 import com.example.ceshisuan.ws_02.ListsSoap;
 import com.example.ceshisuan.ws_demo.*;
-import org.apache.cxf.endpoint.Client;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
-import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.xml.ws.Holder;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
 
 @RestController
-public class CesuanController {
+public class CesuanController2 {
 
     @RequestMapping("nihao2")
     public Object nihao2() throws Exception {
@@ -34,13 +27,11 @@ public class CesuanController {
 
         CopySoap copySoap = (CopySoap) factory.create();
 
-      */
-/*  InputStream is = new FileInputStream("/home/bruobuqi/Pictures/001.jpg");
-        byte[] contents=     HttpClientUtils.readInputStream(is);*//*
-
+      /*  InputStream is = new FileInputStream("/home/bruobuqi/Pictures/001.jpg");
+        byte[] contents=     HttpClientUtils.readInputStream(is);*/
         File file = new File("/home/bruobuqi/Pictures/001.jpg");
         byte[] contents = Files.readAllBytes(file.toPath());
-        System.out.println(contents.length);
+        System.err.println(contents.length);
         String SourceUrl ="http://void(0)";
 
         String oDestinationUrl="http://eip.gcl-power.com/GCLResource/NewsPicLibrary/新能源/信息化新闻/4478186a65fa4c84865b0c5cee909f1d.jpg";
@@ -56,12 +47,12 @@ public class CesuanController {
         FieldInformationCollection fieldInformationCollection=new FieldInformationCollection();
         Holder<Long> copyIntoItemsResult=new Holder<>();
         Holder<CopyResultCollection> results=new Holder<>();
-        //copySoap.copyIntoItems(oSourceUrl,destinationUrlCollection,fieldInformationCollection,contents,copyIntoItemsResult,results);
-        copySoap.copyIntoItemsLocal(SourceUrl,DestinationUrls,copyIntoItemsResult,results);
+        copySoap.copyIntoItems(SourceUrl,DestinationUrls,fieldInformationCollection,contents,copyIntoItemsResult,results);
+        //   copySoap.copyIntoItemsLocal(SourceUrl,DestinationUrls,copyIntoItemsResult,results);
        // copySoap.getItem();
-        javax.xml.ws.Holder<Long> getItemResult=new Holder();
-        javax.xml.ws.Holder<FieldInformationCollection> fields=new Holder<>();
-        javax.xml.ws.Holder<byte[]> stream=new Holder<>();
+        Holder<Long> getItemResult=new Holder();
+        Holder<FieldInformationCollection> fields=new Holder<>();
+        Holder<byte[]> stream=new Holder<>();
       // copySoap.getItem("http://eip.gcl-power.com/GCLResource/NewsPicLibrary/新能源/信息化新闻/",getItemResult,fields,stream);
         System.out.println("connection result:");
         return stream;
@@ -83,4 +74,3 @@ public class CesuanController {
 
 
 }
-*/

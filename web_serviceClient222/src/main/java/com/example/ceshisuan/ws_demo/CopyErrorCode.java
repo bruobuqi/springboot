@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>CopyErrorCode�� Java �ࡣ
+ * <p>CopyErrorCode的 Java 类。
  * 
- * <p>����ģʽƬ��ָ�������ڴ����е�Ԥ�����ݡ�
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * <p>
  * <pre>
  * &lt;simpleType name="CopyErrorCode">

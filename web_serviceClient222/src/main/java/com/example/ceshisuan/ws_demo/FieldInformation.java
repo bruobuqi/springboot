@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>FieldInformation complex type�� Java �ࡣ
+ * <p>FieldInformation complex type的 Java 类。
  * 
- * <p>����ģʽƬ��ָ�������ڴ����е�Ԥ�����ݡ�
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
  * &lt;complexType name="FieldInformation">
@@ -44,7 +44,7 @@ public class FieldInformation {
     protected String value;
 
     /**
-     * ��ȡtype���Ե�ֵ��
+     * 获取type属性的值。
      * 
      * @return
      *     possible object is
@@ -56,7 +56,7 @@ public class FieldInformation {
     }
 
     /**
-     * ����type���Ե�ֵ��
+     * 设置type属性的值。
      * 
      * @param value
      *     allowed object is
@@ -68,7 +68,7 @@ public class FieldInformation {
     }
 
     /**
-     * ��ȡdisplayName���Ե�ֵ��
+     * 获取displayName属性的值。
      * 
      * @return
      *     possible object is
@@ -80,7 +80,7 @@ public class FieldInformation {
     }
 
     /**
-     * ����displayName���Ե�ֵ��
+     * 设置displayName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -92,7 +92,7 @@ public class FieldInformation {
     }
 
     /**
-     * ��ȡinternalName���Ե�ֵ��
+     * 获取internalName属性的值。
      * 
      * @return
      *     possible object is
@@ -104,7 +104,7 @@ public class FieldInformation {
     }
 
     /**
-     * ����internalName���Ե�ֵ��
+     * 设置internalName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -116,7 +116,7 @@ public class FieldInformation {
     }
 
     /**
-     * ��ȡid���Ե�ֵ��
+     * 获取id属性的值。
      * 
      * @return
      *     possible object is
@@ -128,7 +128,7 @@ public class FieldInformation {
     }
 
     /**
-     * ����id���Ե�ֵ��
+     * 设置id属性的值。
      * 
      * @param value
      *     allowed object is
@@ -140,7 +140,7 @@ public class FieldInformation {
     }
 
     /**
-     * ��ȡvalue���Ե�ֵ��
+     * 获取value属性的值。
      * 
      * @return
      *     possible object is
@@ -152,7 +152,7 @@ public class FieldInformation {
     }
 
     /**
-     * ����value���Ե�ֵ��
+     * 设置value属性的值。
      * 
      * @param value
      *     allowed object is
